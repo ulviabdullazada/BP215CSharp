@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BDU</title>
+</head>
+<body>
+    @* @for (int i = 0; i < 100; i++)
+    {
+        <p>@i</p>
+    } *@
+    @* <p>@ViewData["name"] @ViewData["surname"]</p> *@
+    <ol>
+        @foreach (var item in ViewBag.Students)
+        {
+            <li>@item</li>
+        }
+    </ol>
+</body>
+</html>

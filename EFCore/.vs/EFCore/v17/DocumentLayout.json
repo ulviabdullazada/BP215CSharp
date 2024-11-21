@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|c:\\users\\\u00FClvi\\desktop\\bp215\\efcore\\efcore\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|solutionrelative:efcore\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|c:\\users\\\u00FClvi\\desktop\\bp215\\efcore\\efcore\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|solutionrelative:efcore\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|c:\\users\\\u00FClvi\\desktop\\bp215\\efcore\\efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F5593B-FAA6-4ADD-92F0-2A28D1E4986D}|EFCore\\EFCore.csproj|solutionrelative:efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -51,6 +59,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\EFCore\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EFCore\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\EFCore\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "EFCore\\Contexts\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:37:26.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\EFCore\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "EFCore\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\EFCore\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "EFCore\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:37:23.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u00DClvi\\Desktop\\BP215\\EFCore\\EFCore\\Program.cs",
               "RelativeDocumentMoniker": "EFCore\\Program.cs",
@@ -58,8 +91,7 @@
               "RelativeToolTip": "EFCore\\Program.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwCwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T12:21:04.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T12:21:04.264Z"
             }
           ]
         },
