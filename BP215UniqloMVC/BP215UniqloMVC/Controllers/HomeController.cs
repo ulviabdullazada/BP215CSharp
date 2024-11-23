@@ -1,4 +1,5 @@
 ﻿using BP215UniqloMVC.DataAccess;
+using BP215UniqloMVC.Models;
 using BP215UniqloMVC.ViewModels.Slider;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
