@@ -3,6 +3,7 @@ using BP215UniqloMVC.Extensions;
 using BP215UniqloMVC.Models;
 using BP215UniqloMVC.ViewModels.Product;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BP215UniqloMVC.Areas.Admin.Controllers
 {
@@ -11,11 +12,11 @@ namespace BP215UniqloMVC.Areas.Admin.Controllers
     {
         public async Task<IActionResult> Index()
         {
-
-            return RedirectToAction(nameof(Create));
+            return View(await _context.Products.Include(x=> x.Category).ToListAsync());
         }
         public async Task<IActionResult> Create()
         {
+            ViewBag.Categories = await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
             return View();
         }
         [HttpPost]
@@ -28,7 +29,11 @@ namespace BP215UniqloMVC.Areas.Admin.Controllers
                 if (!vm.CoverFile.IsValidSize(300))
                     ModelState.AddModelError("CoverFile","File type must be less than 300kb");
             }
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Categories = await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
+                return View();
+            }
 
             Product product = new Product
             {
@@ -43,7 +48,7 @@ namespace BP215UniqloMVC.Areas.Admin.Controllers
             };
             await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
-            return View();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

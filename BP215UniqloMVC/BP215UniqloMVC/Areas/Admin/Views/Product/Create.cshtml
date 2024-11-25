@@ -6,7 +6,7 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Create Slider</h6>
-        <a asp-action="Index" asp-controller="Slider" class="btn btn-outline-primary ml-auto">Return list</a>
+        <a asp-action="Index" class="btn btn-outline-primary ml-auto">Return list</a>
     </div>
     <div class="card-body">
         <form method="post" enctype="multipart/form-data">
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CoverFile"></label>
-                <input asp-for="CoverFile" class="form-control">
+                <input accept="image/*" asp-for="CoverFile" class="form-control">
                 <span asp-validation-for="CoverFile" class="text-small text-danger"></span>
             </div>
             <div class="form-row">
@@ -49,8 +49,14 @@
                     <span asp-validation-for="Quantity" class="text-small text-danger"></span>
                 </div>
                 <div class="form-group col">
-                    <label asp-for="CategoryId"></label>
-                    <input asp-for="CategoryId" class="form-control">
+                    <label asp-for="CategoryId">Categories</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items='new SelectList(ViewBag.Categories,"Id","Name")'>
+                        <option selected disabled>Select Category</option>
+                        @* @foreach (var item in ViewBag.Categories)
+                        {
+                            <option value="item.Id">@item.Name</option>
+                        } *@
+                    </select>
                     <span asp-validation-for="CategoryId" class="text-small text-danger"></span>
                 </div>
             </div>
